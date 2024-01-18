@@ -37,4 +37,4 @@ EXPOSE 3000
 WORKDIR /data
 ENTRYPOINT ["/one-api"]
 
-HEALTHCHECK --interval=5s --timeout=10s --retries=3 CMD curl --silent --fail http://localhost:3010 || exit 1  # 添加健康检查指令
+HEALTHCHECK --interval=5s --timeout=10s --retries=3 CMD curl --silent --fail http://localhost:3002 || exit 1
