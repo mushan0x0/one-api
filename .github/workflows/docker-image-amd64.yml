@@ -66,4 +66,4 @@ jobs:
             docker remove one-api 2>/dev/null
             docker run --name one-api -d --restart always -p 3002:3000 -e TZ=Asia/Shanghai -v /home/ubuntu/data/one-api:/data \
               -e THEME=berry \
-              mushan0x0/one-api
+              mushan0x0/one-api:main
